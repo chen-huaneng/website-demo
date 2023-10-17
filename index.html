@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abel - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Abel" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Abel">陈华能(Abel)</h1>
+
+          <p class="title">管理科学与工程专业</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>展开</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">联系邮箱</p>
+
+              <a href="mailto:2545063967@qq.com" class="contact-link">2545063967@qq.com</a>
+            </div>
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">生日</p>
+
+              <time datetime="2003-07-18">2003-07-18</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">地址</p>
+
+              <address>(中国)福建省厦门市</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/chen-huaneng" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://space.bilibili.com/249419756/video" class="social-link">
+              <img src="./assets/images/icon-bilibili.svg
+                " alt="bilibili icon" width="18">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@Huaneng-Chen" class="social-link">
+              <!-- <ion-icon name="logo-youtube"></ion-icon> -->
+              <img src="./assets/images/icon-youtube.svg
+                " alt="youtube icon" width="18">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="assets/images/wechat.jpg" class="social-link">
+              <!-- <ion-icon name="logo-wechat"></ion-icon> -->
+              <img src="./assets/images/icon-wechat.svg
+                " alt="wechat icon" width="18">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://discordapp.com/users/1053609134030860328" class="social-link">
+              <!-- <ion-icon name="logo-discord"></ion-icon> -->
+              <img src="./assets/images/icon-discord.svg
+                " alt="discord icon" width="18">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.zhihu.com/people/yun-tun-5-10" class="social-link">
+              <img src="./assets/images/icon-zhihu.svg
+                " alt="zhihu icon" width="18">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <main class="main-content">
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <div class="typed-container">
+          <header>
+            <h2 class="h2 article-title">
+              <!-- Element to contain animated typing -->
+              <span id="element"></span>
+            </h2>
+          </header>
+        </div>
+
+        <section class="about-text">
+
+          <p>
+            我是来自厦门大学的一名本科生，现在是管理学院管理科学与工程专业的本科三年级学生。个人的爱好就是折腾各种计算机相关的有趣的事情，
+            虽然现在我对很多深入底层、内核的内容都只是稍微有点了解。
+          </p>
+
+          <p>
+            目前比较常用的操作系统有Windows/Linux(Ubuntu)/WSL(Windows Subsystem for Linux)，主要是用Windows Terminal搭载PowerShell和bash内核完成
+            一些自动化的任务，主要的开发任务还是在VSCode下完成的。我的计算机哲学是，能够轻量化就尽量轻量化，能够提升性能和减少不必要的代码就尽量做到。另外，
+            如果你对高效编辑有兴趣，我强烈建议你尝试一下Vim/Neovim/Emacs，你会发现不一样的世界。
+          </p>
+        </section>
+
+        <!--
+          - Software
+        -->
+        <header>
+          <h2 class="h2 article-title">Software I Use</h2>
+        </header>
+
+        <section class="languages">
+
+          <ul class="languages-list has-scrollbar" id="languages-list-software">
+
+          </ul>
+
+        </section>
+
+        <!--
+          - languages
+        -->
+        <header>
+          <h2 class="h2 article-title">Programming Languages I Familiar</h2>
+        </header>
+
+        <section class="languages">
+
+          <ul class="languages-list has-scrollbar" id="languages-list-me">
+
+          </ul>
+
+        </section>
+
+        <header>
+          <h2 class="h2 article-title">Personal Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">个人经历</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">大三</h4>
+
+              <span>2023 — 现在</span>
+
+              <p class="timeline-text">
+                主要学习Java、商业大数据分析、电子商务技术基础、运筹学等专业相关课程，还有学习HTML、CSS、JavaScript等编程相关的技术。
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">厦门国际信托</h4>
+
+              <span>2023.7 — 2023.9</span>
+
+              <p class="timeline-text">
+                在厦门国际信托公司的信息技术部实习，主要负责公司内部的金融交易平台的流程开发任务，配合测试和产品对接人员完成有关的流程开发。
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">大二</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                主要学习了算法与数据结构、计算机网络、数据库技术与应用等专业课程，自学了C++相关的一些内容，同时在算法和数据结构中锻炼了C语言的编码能力。
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">大一</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                主要学习了会计学原理、微积分、线性代数、概率论与数理统计、财务管理、宏观经济学等专业相关课程。
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!--
+          - Blogs
+        -->
+        <header>
+          <h2 class="h2 article-title">Blogs</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484146&idx=1&sn=2c2381c434d154cb73119c3a47a35c98&chksm=ce236275f954eb63a5f47104913b7886a8ed51b4364702d0959f4d4e743c1dfcb810b0c93d5f&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="2023-03-18" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">技术</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-03-18">Mar 18, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Excel规划求解无法使用</h3>
+
+                  <p class="blog-text">
+                    关于Excel规划求解无法使用的解决方案
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484129&idx=1&sn=2823f02af3fbda1ab74df07031bb9fab&chksm=ce236266f954eb7070b09a2040ecc1b5153620670b4691a569e08cdf5642ab228190961e6cd0&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="2022-12-29" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">文学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-12-29">Dec 29, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">贾宝玉角色赏析——从对传统男性角色的叛逆角度 #朝花夕拾No.2</h3>
+
+                  <p class="blog-text">
+                    "满纸荒唐言，一把辛酸泪。"
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484115&idx=1&sn=0e8b125e918a97a2349dc2640f258aa5&chksm=ce236254f954eb426252ce18651f0e86178bd1423d10b3e4815a2ae4a97e0a4f312a97d1c99a&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="2022-11-30" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">文学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 30, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">最是平凡能动人 #书山有径No.3</h3>
+
+                  <p class="blog-text">
+                    对于我们平凡人而言，生命中许多微细小事，并没有什么特别缘故地就在心深处留下印记，天长日久便成为弥足珍贵的回忆。
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484103&idx=1&sn=45cd4d15b8b6886ab7df1d60be0b92f0&chksm=ce236240f954eb564b16c334d3ebbe34eaafb9b2ba3f24357f4babb10dbe96eb9e5a0fedbf7a&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="2022-11-25" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">文学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-11-25">Nov 25, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">荒诞中的真实 #书山有径No.2</h3>
+
+                  <p class="blog-text">
+                    “我们都是这样的混合物，一半是冷漠无情，一半是卑鄙邪恶。“
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484094&idx=1&sn=3ce8aa0ec9d025d94c876f7ead8351d3&chksm=ce236239f954eb2fa3a066370d0cafcae9dea9516c5309b5de280ee1fd65c0fbc94c30c10b18&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="2022-11-14" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">文学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-11-14">Nov 14, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">读《红楼梦辨》 #书山有径No.1</h3>
+
+                  <p class="blog-text">
+                    一曲《红楼梦》，声声醉落霞。身为天上玉，故探镜中花。
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484087&idx=1&sn=8873abc54975217a76df811e9d8c0803&chksm=ce236230f954eb2610ba4f0499c3094e9c14b5fdaac366dad75224813a4c2f1943eb86fb74dc&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="2022-10-30" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">文学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-10-30">Oct 30, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">对一些社会问题的思考 #随想/学而思No.1</h3>
+
+                  <p class="blog-text">
+                    “一思尚存，此志不懈。”——胡居仁
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484081&idx=1&sn=ffa00089e7624f0a1a86101918179cac&chksm=ce236236f954eb20d0f4ded690d156cdbc88953fa5933579cd10f19d12858e6c54af7e875421&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-7.jpg" alt="2022-10-01" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">经济金融</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-10-01">Oct 01, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+
+                  <p class="blog-text">
+                    瑞幸咖啡是一家什么样的公司？瑞幸是如何创造快速增长的奇迹？
+                    为何瑞幸在一夜之间跌到停牌？曾经的瑞幸咖啡造假案为何轰动一时？
+                    瑞幸造假事件对我们有什么启示？
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484043&idx=1&sn=01f25b6205615c21303c2d4aaa1457d2&chksm=ce23620cf954eb1a0f1c0d76926afd5c7f97e71988924d85159ad3cb484bdd06da3ba346b900&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-8.jpg" alt="2022-05-23" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">文学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-05-23">May 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">点亮黑暗森林的文明篝火——《三体》的人文精神 #朝花夕拾No.1</h3>
+
+                  <p class="blog-text">
+                    “他从未成熟，但一刻也没停止成长。”——阿瑟·克拉克
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2MDcxNTQ5Ng==&mid=2247484015&idx=1&sn=00fa022ae7ebaf7057e504ab8d450361&chksm=ce2362e8f954ebfe709227a36b6de1248bedeb91b1ba270a36d0c158e9bcce01b317934bdc73&token=585181166&lang=zh_CN#rd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-9.jpg" alt="2022-02-09" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">数学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-09">Feb 09, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">三与四的别样情怀 #温故知新No.2</h3>
+
+                  <p class="blog-text">
+                    “读George Polya的《How to Solve It》引发的延伸思考”
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://mp.weixin.qq.com/s/RzV3wXaAveXVWbibAMleQQ">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-10.jpg" alt="2022-01-28" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">人生感悟</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-01-28">Jan 28, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">没有结果的事，有意义吗？</h3>
+
+                  <p class="blog-text">
+                    如果一件事没有结果，你还愿意做吗？
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://mp.weixin.qq.com/s/yO9jMiITFLoaEM8IjL-1mQ">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-11.jpg" alt="2022-01-26" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">数学</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-01-26">Jan 26, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">一条从未设想的道路 #温故知新No.1</h3>
+
+                  <p class="blog-text">
+                    你可能从没想过还可以这样。
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+        <!--
+          - Pictures
+        -->
+        <header>
+          <h2 class="h2 article-title">Pictures</h2>
+        </header>
+
+        <section class="picture-posts">
+
+          <ul class="picture-posts-list2">
+
+            <li class="picture-post-item">
+              <a href="">
+                <figure class="picture-banner-box">
+                  <img src="./assets/images/picture-1.jpg" loading="lazy">
+                </figure>
+              </a>
+            </li>
+
+            <li class="picture-post-item">
+              <a href="">
+                <figure class="picture-banner-box">
+                  <img src="./assets/images/picture-2.jpg" loading="lazy">
+                </figure>
+              </a>
+            </li>
+
+            <li></li>
+
+          </ul>
+
+          <ul class="picture-posts-list" picture-list-js>
+
+          </ul>
+        </section>
+
+      </article>
+
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+      - Load library from the CDN
+  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </main>
+</body>
+
+</html>
